@@ -1,0 +1,37 @@
+// Flexbox mixin
+.flex(@justify: space-between, @align: center) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+// Grid mixin
+.grid(@columns, @column-width, @column-gap, @row-gap) {
+    display: grid;
+    grid-template-columns: repeat(@columns, @column-width);
+    column-gap: @column-gap;
+    row-gap: @row-gap;
+    width: 100%;
+}
+
+// Button mixin
+.button(@bg-color, @text-color, @padding, @radius) {
+    display: block;
+    background-color: @bg-color;
+    color: @text-color;
+    text-align: center;
+    padding: @padding;
+    border-radius: @radius;
+    text-decoration: none;
+    
+    &:hover {
+        background-color: @secondary-color-hover;
+    }
+}
+
+// Container mixin
+.container() {
+    max-width: @container-max-width;
+    width: 100%;
+    margin: 0 auto;
+}
