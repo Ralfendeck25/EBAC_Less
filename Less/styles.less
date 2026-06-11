@@ -1,0 +1,26 @@
+// Import all partials
+@import "variables.less";
+@import "mixins.less";
+@import "components/header.less";
+@import "components/products.less";
+@import "components/responsive.less";
+
+// Reset styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: @font-family;
+}
+
+body {
+    background-color: @background-color;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    .container();
+}
