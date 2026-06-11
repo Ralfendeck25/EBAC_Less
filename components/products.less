@@ -1,0 +1,20 @@
+section {
+    padding: @section-padding;
+}
+
+.products {
+    margin-top: 40px;
+    .grid(@grid-columns, @grid-column-width, @grid-gap, @grid-row-gap);
+}
+
+.product-item {
+    img {
+        width: 100%;
+        border-radius: @product-image-radius;
+    }
+}
+
+.product-button {
+    .button(@secondary-color, @text-color, 8px 0, @product-button-radius);
+    margin-top: 8px;
+}

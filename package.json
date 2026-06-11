@@ -1,0 +1,16 @@
+{
+  "name": "ebac-less-exercise",
+  "version": "1.0.0",
+  "description": "LESS exercise for EBAC course",
+  "scripts": {
+    "compile": "lessc styles.less styles.css",
+    "watch": "less-watch-compiler --run-once --main-dir . --output-dir . styles.less styles.css",
+    "serve": "live-server --port=5500",
+    "dev": "npm run compile && npm run serve"
+  },
+  "devDependencies": {
+    "less": "^4.2.0",
+    "live-server": "^1.2.2",
+    "less-watch-compiler": "^1.16.0"
+  }
+}
